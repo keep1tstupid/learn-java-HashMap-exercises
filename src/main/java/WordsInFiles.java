@@ -2,6 +2,12 @@ import java.io.*;
 import java.util.*;
 import java.util.regex.*;
 
+/*
+* Counts all unique words and number of their occurrence in multiple files.
+* Creates 2 HashMaps (filename, words) and (word, files with this word).
+* Allows to find and count common words in a few files.
+ */
+
 public class WordsInFiles {
     private static HashMap<String, HashSet<String>> wordInFiles;
     private static HashMap<String, HashSet<String>> filesContent;

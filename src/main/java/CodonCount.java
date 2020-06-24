@@ -1,6 +1,8 @@
-import edu.duke.FileResource;
-
 import java.util.*;
+
+/*
+* Can parse DNA string from different start points. Counts codons, shows common one.
+ */
 
 public class CodonCount {
     private static HashMap<String, Integer> codonMap;

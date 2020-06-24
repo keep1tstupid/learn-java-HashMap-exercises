@@ -2,6 +2,11 @@ import edu.duke.FileResource;
 import java.util.ArrayList;
 import java.util.regex.*;
 
+/*
+* Counts Characters in Shakespeare plays and quantity of their lines.
+* Characters by number of their lines can be shown.
+* In given files names of characters are always in UpperCase and followed by dot.
+*/
 
 public class CharactersInPlay {
     private static ArrayList<String> names;
@@ -50,6 +55,7 @@ public class CharactersInPlay {
         }
     }
 
+    // prints characters who have lines amount between num1 and num2 (inclusive)
     public static void charactersWithNumParts(int num1, int num2) {
         for (String s: names) {
             int index = names.indexOf(s);

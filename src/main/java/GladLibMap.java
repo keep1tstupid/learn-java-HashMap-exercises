@@ -1,7 +1,16 @@
+import java.util.*;
 import edu.duke.FileResource;
 import edu.duke.URLResource;
 
-import java.util.*;
+/*
+* Creates random story using template text file.
+* Template contains <tags> with category names inside. Class method recognises tags and replaces them
+* with random words from the appropriate category.
+* Custom data structure RandomisedQueue is used because it return and remove its element
+* and this behaviour allows to avoid using the same word from the category twice.
+* Some additional analytical methods allows to count replaces words,
+* used categories and words in them, etc.
+*/
 
 public class GladLibMap {
 	private HashMap<String, RandomizedQueue<String>> map;
